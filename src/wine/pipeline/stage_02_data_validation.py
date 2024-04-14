@@ -3,7 +3,7 @@ from wine.components.data_validation import DataValidation
 from wine import logger
 
 
-STAGE_NAME = "Data Validation stage"
+STAGE_NAME = "DATA VALIDATION"
 
 class DataValidationTrainingPipeline:
     def __init__(self):
@@ -19,10 +19,10 @@ class DataValidationTrainingPipeline:
 
 if __name__ == '__main__':
     try:
-        logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+        logger.info(f">>>>>> starting {STAGE_NAME} stage <<<<<<")
         obj = DataValidationTrainingPipeline()
         obj.main()
-        logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+        logger.info(f">>>>>> completed {STAGE_NAME} stage <<<<<<\n\nx==========x")
     except Exception as e:
         logger.exception(e)
         raise e

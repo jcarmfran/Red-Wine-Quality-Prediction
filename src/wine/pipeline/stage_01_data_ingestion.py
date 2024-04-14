@@ -3,7 +3,7 @@ from wine.components.data_ingestion import DataIngestion
 from wine import logger
 
 
-STAGE_NAME = "Data Ingestion stage"
+STAGE_NAME = "DATA INGESTION"
 
 class DataIngestionTrainingPipeline:
     def __init__(self):
@@ -20,10 +20,10 @@ class DataIngestionTrainingPipeline:
 
 if __name__ == '__main__':
     try:
-        logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+        logger.info(f">>>>>> starting {STAGE_NAME} stage <<<<<<")
         obj = DataIngestionTrainingPipeline()
         obj.main()
-        logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+        logger.info(f">>>>>> completed {STAGE_NAME} stage <<<<<<\n\nx==========x")
     except Exception as e:
         logger.exception(e)
         raise e
